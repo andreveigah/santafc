@@ -4,53 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Importando o arquivo de estilo personalizado -->
     <link rel="stylesheet" href="CSS/style.css">
-    <!-- Importando o CSS do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-    <!-- Utilizando a biblioteca Font Awesome para os ícones das redes sociais no final da página -->
     <script src="https://kit.fontawesome.com/4cda332ce4.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="/img/logo-santa-cruz.png">
     <title>Santa FC</title>
 </head> 
 <body>
-    <!--Menu de Navegação 
-        A classe "navbar" define o estilo básico da barra de navegação.
-        A classe "navbar-expand-lg" indica que a barra de navegação deve expandir em dispositivos de largura média (lg) ou maiores.
-        A classe "navbar-dark" define um esquema de cores escuro para a barra de navegação.
-        A classe "bg-light" aplica um fundo claro à barra de navegação.-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <!--Contêiner para envolver os elementos da barra de navegação. 
-        Define um contêiner responsivo com margens laterais automáticas-->
-    <div class="container"> 
-    <!--Cria uma img para ser exibida como logo
-        "img-fluid" torna a imagem responsiva, adaptando-se ao tamanho do contêiner.
-        O estilo inline "width: 50px; height: auto;" define a largura da imagem como 50 pixels e a altura como automática, 
-        mantendo a proporção original da imagem.
-        "d-inline-block" será exibido na mesma linha com outros elementos.
-        "align-top" alinhamento vertical superior, fazendo que fique alinhado com p/ superior do conteiner ou qual ele pertence-->  
-      <a class="navbar-brand" href="/">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+    <div class="container">  
+      <a class="navbar-brand" href="#inicio">
         <img src="img/logo-santa-cruz.png" class="img-fluid" style="width: 50px; height: auto;" class="d-inline-block align-top" alt="">Santa Cruz Futebol Clube
       </a>
-      <!--A primeira linha cria um botão para alternar a exibição do menu de navegação em dispositivos móveis.
-          A classe "navbar-toggler" estiliza o botão de alternância.
-          O atributo "data-bs-toggle" indica que o botão aciona a funcionalidade de colapso.
-          O atributo "data-bs-target" especifica o ID do elemento que será colapsado (nesse caso, a barra de navegação).
-          Os atributos "aria-controls" e "aria-expanded" são fornecidos para fins de acessibilidade.
-          aria-label="Toggle navigation" é usado para fornecer uma descrição concisa e direta para o botão de alternância de navegação.-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false">
-      <!--Esta linha cria o ícone exibido no botão de alternância.
-          A classe "navbar-toggler-icon" define o estilo do ícone.-->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <!--Lista de itens de navegação
-          A classe "navbar-nav" "nav-item" define o estilo básico da lista de navegação.
-          A classe "ml-auto" aplica margem à esquerda automática, empurrando os itens de navegação para a direita. -->
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-      <!--"#section1" significa que o link levará o usuário para a seção com o ID "section1" na página.-->      
+          <li class="nav-item">     
             <a class="nav-link" href="#section1">História</a>
           </li>
           <li class="nav-item">
@@ -68,70 +40,55 @@
         </ul>
       </div>
   </nav>
+  <br id = "inicio">
+</br>
+  </body>
   
-      <!-- Cabeçalho -->
 <header class="bg-dark text-white text-center py-5">
   <div class="container">
     <h1>O Mais Querido Do Nordeste</h1>
     <p>O Santa Cruz Futebol Clube é um dos clubes mais tradicionais e amados do Nordeste brasileiro.
       Com uma história rica e uma apaixonada torcida, o clube representa uma paixão que atravessa gerações.</p>
-     <!-- O botão "Saiba Mais" irá abrir o modal com as informações adicionais -->
     <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#informacoesModal">Saiba Mais</button>
   </div>
 </header>
 
-    <!-- Modal de Informações -->
-    <!-- Div que representa o modal -->
 <div class="modal fade" id="informacoesModal" tabindex="-1" aria-labelledby="informacoesModalLabel" aria-hidden="true">
-    <!-- Div que centraliza o modal na tela -->
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <!-- Conteúdo do modal -->
     <div class="modal-content">
-      <!-- Cabeçalho do modal -->
       <div class="modal-header">
         <h5 class="modal-title" id="informacoesModalLabel">Informações sobre o Santa Cruz Futebol Clube</h5>
-        <!-- Botão para fechar o modal -->
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <!-- Corpo do modal -->
       <div class="modal-body">
-       <!-- Títulos do Santa Cruz Futebol Clube -->
        <h2>Títulos do Santa Cruz Futebol Clube</h2>
        <ul>
          <li>Campeonato Pernambucano: 30 vezes</li>
          <li>Copa do Nordeste: 3 vezes</li>
          <li>Campeonato Brasileiro - Série C: 1 vez</li>
-         <!-- Lista dos títulos conquistados pelo clube -->
        </ul>
 
-       <!-- Estádio -->
        <h2>Estádio</h2>
        <p>O Santa Cruz Futebol Clube manda seus jogos no Estádio do Arruda, localizado na cidade do Recife, Pernambuco. O estádio tem capacidade para aproximadamente 60.000 espectadores.</p>
-       <!-- Informações sobre o estádio do clube -->
 
-       <!-- Sócios -->
        <h2>Sócios</h2>
        <p>O clube possui uma grande quantidade de sócios, que são fundamentais para o apoio e sustentabilidade do Santa Cruz Futebol Clube.</p>
-       <!-- Informações sobre os sócios do clube -->
 
-       <!-- Recursos adicionais -->
        <h2>Recursos Adicionais</h2>
        <ul>
         <li><a href="http://www.santacruzpe.com.br/linha-do-tempo/" target="_blank">História do Santa Cruz Futebol Clube</a></li>
         <li><a href="https://pt.everybodywiki.com/T%C3%ADtulos_do_Santa_Cruz_Futebol_Clube" target="_blank">Títulos Conquistados pelo Santa Cruz Futebol Clube</a></li>
         <li><a href="https://www.youtube.com/watch?v=tElMTX6i1yA" target="_blank">Conheça o Estádio do Arruda</a></li>
         <li><a href="http://www.santacruzpe.com.br/noticias/" target="_blank">Notícias e Atualidades sobre o Santa Cruz Futebol Clube</a>
-         <!-- Links para recursos adicionais relacionados ao clube -->
        </ul>
       </div>
       <div class="modal-footer">
-        <!-- Botão para fechar o modal -->
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
 </div>
-  <!-- Seção 1 - História -->
+
   <section id="section1" class="py-5">
     <div class="container">
       <h2>História</h2>
@@ -145,32 +102,18 @@
     </div>
   </section>
 
-
-  <!-- Seção 2 - Elenco -->
   <section id="section2" class="py-5 bg-light">
-    <!-- Define uma seção com o ID "section2" e aplica as classes "py-5" e "bg-light" para estilização -->
     <div class="container">
-      <!-- Cria um contêiner para conter o conteúdo da seção -->
       <h2 class="mb-4">Elenco 2023</h2>
-      <!-- Título "Elenco" com uma margem inferior de 4 unidades -->
       <p class="mb-5">Conheça os jogadores que compõem o atual elenco do Santa Cruz FC e que representam o clube nos gramados.</p>
-      <!-- Parágrafo de introdução com uma margem inferior de 5 unidades -->
       <div class="table-responsive">
-        <!-- Cria um contêiner responsivo para a tabela -->
         <table class="table table-striped">
-          <!-- Cria a tabela com as classes "table" e "table-striped" para estilização -->
           <thead>
-            <!-- Cabeçalho da tabela -->
             <tr>
-              <!-- Linha do cabeçalho -->
               <th>Posição</th>
-              <!-- Coluna "Posição" -->
               <th>Jogador</th>
-              <!-- Coluna "Jogador" -->
               <th>Idade</th>
-              <!-- Coluna "Idade" -->
               <th>País</th>
-              <!-- Coluna "País" -->
             </tr>
           </thead>
           <tbody>
@@ -324,31 +267,18 @@
     </div>
   </section>
   
-  <!-- Seção 3 - Próximos Jogos -->
   <section id="section3" class="py-5">
-    <!-- Identificador da seção com ID "section3" e classe "py-5" para adicionar preenchimento vertical -->
     <div class="container">
-        <!-- Container para agrupar o conteúdo -->
         <h2>Próximos Jogos</h2>
-        <!-- Título da seção -->
         <p>Fique por dentro dos próximos jogos do Santa Cruz FC e não perca nenhuma partida.</p>
-        <!-- Descrição da seção -->
         <div class="row">
-            <!-- Divisão em linhas (row) para criar uma grade -->
             <div class="col-lg-3 col-md-6">
-                <!-- Divisão em colunas (col-lg-3 col-md-6) para definir o layout responsivo -->
                 <div class="jogo card">
-                    <!-- Cartão para exibir as informações do jogo -->
                     <div class="card-body">
-                        <!-- Corpo do cartão -->
                         <h5 class="card-title">CAMPEONATO - SERIE D</h5>
-                        <!-- Título do jogo -->
                         <h6 class="card-subtitle mb-2 text-muted">08/06 às 19:30</h6>
-                        <!-- Subtítulo com data e horário do jogo -->
                         <p class="card-text">Santa Cruz FC x Pacajus</p>
-                        <!-- Descrição do jogo -->
                         <p class="card-text">Estádio do Arruda (Recife, PE)</p>
-                        <!-- Local do jogo -->
                     </div>
                 </div>
             </div>
@@ -389,31 +319,30 @@
     </div>
   </section>
 
-    <!-- Seção 4 - Notícias -->
-    <section id="section4" class="py-5 bg-light"> <!-- Classe "py-5" define o espaçamento vertical e classe "bg-light" define o fundo claro -->
-      <div class="container"> <!-- Classe "container" define o contêiner para o layout responsivo -->
-        <h2>Notícias</h2> <!-- Título da seção de notícias -->
-        <p>Confira as últimas notícias e novidades sobre o Santa Cruz FC.</p> <!-- Descrição da seção -->
+    <section id="section4" class="py-5 bg-light">
+      <div class="container">
+        <h2>Notícias</h2>
+        <p>Confira as últimas notícias e novidades sobre o Santa Cruz FC.</p>
   
-        <div class="row"> <!-- Classe "row" define uma linha para os cards de notícias -->
-          <div class="col-md-6"> <!-- Classe "col-md-6" define uma coluna de 6 unidades para dispositivos médios -->
-            <div class="card mb-3"> <!-- Classe "card" define um card para exibir uma notícia -->
-              <img src="img/img2.png" class="card-img-top" alt="Imagem da notícia"> <!-- Imagem da notícia -->
-              <div class="card-body"> <!-- Classe "card-body" define o conteúdo do card -->
-                <h5 class="card-title">NOTA OFICIAL</h5> <!-- Título da notícia -->
-                <p class="card-text">Negociações com Consultoria Internacional.</p> <!-- Texto da notícia -->
-                <button class="btn btn-primary" data-toggle="modal" data-target="#noticia1-modal">Leia mais</button> <!-- Botão para abrir o modal -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3"> 
+              <img src="img/img2.png" class="card-img-top" alt="Imagem da notícia">
+              <div class="card-body">
+                <h5 class="card-title">NOTA OFICIAL</h5>
+                <p class="card-text">Negociações com Consultoria Internacional.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#noticia1-modal">Leia mais</button>
               </div>
             </div>
           </div>
   
-          <div class="col-md-6"> <!-- Classe "col-md-6" define uma coluna de 6 unidades para dispositivos médios -->
-            <div class="card mb-3"> <!-- Classe "card" define um card para exibir uma notícia -->
-              <img src="img/torcida.jpg" class="card-img-top" alt="Imagem da notícia"> <!-- Imagem da notícia -->
-              <div class="card-body"> <!-- Classe "card-body" define o conteúdo do card -->
-                <h5 class="card-title">NOTA OFICIAL</h5> <!-- Título da notícia -->
-                <p class="card-text">Esclarecimentos à torcida.</p> <!-- Texto da notícia -->
-                <button class="btn btn-primary" data-toggle="modal" data-target="#noticia2-modal">Leia mais</button> <!-- Botão para abrir o modal -->
+          <div class="col-md-6">
+            <div class="card mb-3">
+              <img src="img/torcida.jpg" class="card-img-top" alt="Imagem da notícia">
+              <div class="card-body">
+                <h5 class="card-title">NOTA OFICIAL</h5>
+                <p class="card-text">Esclarecimentos à torcida.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#noticia2-modal">Leia mais</button>
               </div>
             </div>
           </div>
@@ -421,28 +350,16 @@
       </div>
     </section>
   
-    <!-- Modal 1 -->
     <div class="modal fade" id="noticia1-modal" tabindex="-1" role="dialog" aria-labelledby="noticia1-modal-label" aria-hidden="true">
-      <!-- Classe "modal fade" define um modal que é ocultado inicialmente -->
-      <!-- ID "noticia1-modal" identifica exclusivamente este modal -->
-      <!-- Atributos tabindex, role e aria são usados para fins de acessibilidade -->
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <!-- Classe "modal-dialog" define o contêiner para o conteúdo do modal -->
         <div class="modal-content">
-          <!-- Classe "modal-content" define o conteúdo do modal -->
           <div class="modal-header">
-            <!-- Classe "modal-header" define o cabeçalho do modal -->
             <h5 class="modal-title" id="noticia1-modal-label">NOTA OFICIAL</h5>
-            <!-- Classe "modal-title" define o título do modal -->
-            <!-- ID "noticia1-modal-label" identifica exclusivamente o título do modal -->
             <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <!-- Botão para fechar o modal -->
               <span aria-hidden="true">&times;</span>
-              <!-- Ícone "X" para representar o fechamento do modal -->
             </button>
           </div>
           <div class="modal-body">
-            <!-- Classe "modal-body" define o corpo do modal -->
             <p>O Santa Cruz Futebol Clube informa que efetivamente participou de reuniões com uma Empresa de Consultoria Internacional, no escritório do consultor jurídico do clube. Quem fez a apresentação ao Santa Cruz foi um ex-presidente e seu filho, acompanhados do Cônsul da Inglaterra no Recife. O Cônsul fez a apresentação inicial, falando sobre a Empresa presente à reunião e, em seguida, houve as explanações do representante da Consultoria e da Presidência do Santa Cruz, com os nossos consultores jurídicos e de investimentos. As partes demonstraram interesse e acordaram que seguiriam na formalização da negociação para a troca de informações.</p>
             <p>Posteriormente, ocorreu uma videoconferência entre as partes e, também, a assinatura do NDA – Acordo de Confidencialidade Mútua, para a troca de informações, que continuaram acontecendo. O Santa Cruz recebeu o representante da Consultoria Internacional, na sede social e no estádio, e manteve-se até o presente aguardando as análises da Empresa e as comunicações. Nunca nos pronunciamos contrariamente à negociação, pelo contrário. Houve total interesse do Clube para evoluir nas tratativas. O representante da empresa de consultoria ficou surpreso com a forma que as informações foram transmitidas, gerando um desconforto devido a cláusula de confidencialidade assinada. Divulgações desse tipo só prejudicam a imagem do clube, gerando desconfiança na torcida e no mercado como um todo, haja vista ressaltar que nenhuma das partes foi contrária à uma possível negociação.</p>
           </div>
@@ -450,7 +367,6 @@
       </div>
     </div>
   
-    <!-- Modal 2 -->
     <div class="modal fade" id="noticia2-modal" tabindex="-1" role="dialog" aria-labelledby="noticia2-modal-label" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
@@ -482,52 +398,41 @@
     </div>
   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!-- Inclui a biblioteca jQuery -->
-    <!-- Versão "slim" é uma versão leve do jQuery -->
-    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <!-- Inclui a biblioteca Popper.js -->
-    <!-- O Popper.js é uma biblioteca utilizada pelo Bootstrap para posicionamento de elementos -->
-    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- Inclui o arquivo JavaScript do Bootstrap -->
-    <!-- Contém o código JavaScript necessário para o funcionamento dos componentes do Bootstrap -->
-    
   
-  <!-- Seção 5 - Contato -->
   <section id="section5" class="py-5">
-    <div class="container"> <!-- Classe 'container' define um contêiner com largura fixa para centralizar o conteúdo -->
-      <h2>Contato</h2> <!-- Tag 'h2' para exibir o título "Contato" -->
-      <form id="contact-form" class="needs-validation" novalidate> <!-- Classe 'needs-validation' é usada para validar o formulário -->
-        <div class="form-group"> <!-- Classe 'form-group' agrupa elementos relacionados dentro do formulário -->
-          <label for="name">Nome</label> <!-- Tag 'label' para exibir o rótulo "Nome" do campo de entrada -->
-          <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required> <!-- Classe 'form-control' para estilizar o campo de entrada -->
+    <div class="container">
+      <h2>Contato</h2>
+      <form id="contact-form" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
         </div>
-        <div class="form-group"> <!-- Classe 'form-group' para agrupar elementos relacionados -->
-          <label for="email">E-mail</label> <!-- Tag 'label' para exibir o rótulo "E-mail" do campo de entrada -->
-          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required> <!-- Classe 'form-control' para estilizar o campo de entrada -->
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
         </div>
-        <button type="submit" class="btn btn-danger">Enviar</button> <!-- Classe 'btn' para estilizar o botão e 'btn-danger' para definir uma cor de fundo vermelha -->
+        <button type="submit" class="btn btn-danger">Enviar</button>
       </form>
-      <div id="confirmation-message" class="mt-3 text-success d-none"> <!-- Classe 'mt-3' adiciona margem superior de 3 unidades e 'text-success' define a cor do texto como verde -->
+      <div id="confirmation-message" class="mt-3 text-success d-none">
         O formulário foi enviado com sucesso! Obrigado por entrar em contato.
       </div>
     </div>
   </section>
   
   <script>
-    const contactForm = document.getElementById('contact-form'); // Obtém o elemento do formulário com o ID 'contact-form'
-    const confirmationMessage = document.getElementById('confirmation-message'); // Obtém o elemento da mensagem de confirmação com o ID 'confirmation-message'
+    const contactForm = document.getElementById('contact-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
   
-    contactForm.addEventListener('submit', function(event) { // Adiciona um evento de escuta ao formulário para o evento de envio ('submit')
-      event.preventDefault(); // Impede o envio padrão do formulário
+    contactForm.addEventListener('submit', function(event) { 
   
-      if (contactForm.checkValidity()) { // Verifica se o formulário é válido
-        confirmationMessage.classList.remove('d-none'); // Remove a classe 'd-none' da mensagem de confirmação para torná-la visível
-        contactForm.reset(); // Limpa os campos do formulário
-        contactForm.classList.remove('was-validated'); // Remove a classe 'was-validated' do formulário para limpar a marcação de validação
+      if (contactForm.checkValidity()) {
+        confirmationMessage.classList.remove('d-none');
+        contactForm.reset();
+        contactForm.classList.remove('was-validated');
       } else {
-        contactForm.classList.add('was-validated'); // Adiciona a classe 'was-validated' ao formulário para aplicar a marcação de validação aos campos inválidos
+        contactForm.classList.add('was-validated');
       }
     });
   </script>
